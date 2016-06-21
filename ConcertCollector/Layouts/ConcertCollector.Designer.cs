@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConcertCollector));
             this.tabControl_MainWindow = new System.Windows.Forms.TabControl();
             this.tabPage_EventManagement = new System.Windows.Forms.TabPage();
+            this.button_EventManagement_Save = new System.Windows.Forms.Button();
             this.button_EventManagement_DeleteBand = new System.Windows.Forms.Button();
             this.button_EventManagement_AddBand = new System.Windows.Forms.Button();
             this.label_EventManagement_Bands = new System.Windows.Forms.Label();
@@ -64,6 +65,8 @@
             // 
             // tabPage_EventManagement
             // 
+            this.tabPage_EventManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tabPage_EventManagement.Controls.Add(this.button_EventManagement_Save);
             this.tabPage_EventManagement.Controls.Add(this.button_EventManagement_DeleteBand);
             this.tabPage_EventManagement.Controls.Add(this.button_EventManagement_AddBand);
             this.tabPage_EventManagement.Controls.Add(this.label_EventManagement_Bands);
@@ -82,8 +85,14 @@
             this.tabPage_EventManagement.Controls.Add(this.textBox_EventManagement_Name);
             resources.ApplyResources(this.tabPage_EventManagement, "tabPage_EventManagement");
             this.tabPage_EventManagement.Name = "tabPage_EventManagement";
-            this.tabPage_EventManagement.UseVisualStyleBackColor = true;
             this.tabPage_EventManagement.Click += new System.EventHandler(this.tabPage_EventManagement_Click);
+            // 
+            // button_EventManagement_Save
+            // 
+            resources.ApplyResources(this.button_EventManagement_Save, "button_EventManagement_Save");
+            this.button_EventManagement_Save.Name = "button_EventManagement_Save";
+            this.button_EventManagement_Save.UseVisualStyleBackColor = true;
+            this.button_EventManagement_Save.Click += new System.EventHandler(this.button_EventManagement_Save_Click);
             // 
             // button_EventManagement_DeleteBand
             // 
@@ -184,22 +193,23 @@
             // 
             // tabPage_Search
             // 
+            this.tabPage_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             resources.ApplyResources(this.tabPage_Search, "tabPage_Search");
             this.tabPage_Search.Name = "tabPage_Search";
-            this.tabPage_Search.UseVisualStyleBackColor = true;
             this.tabPage_Search.Click += new System.EventHandler(this.tabPage_Search_Click);
             // 
             // tabPage_Statistics
             // 
+            this.tabPage_Statistics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             resources.ApplyResources(this.tabPage_Statistics, "tabPage_Statistics");
             this.tabPage_Statistics.Name = "tabPage_Statistics";
-            this.tabPage_Statistics.UseVisualStyleBackColor = true;
             this.tabPage_Statistics.Click += new System.EventHandler(this.tabPage_Statistics_Click);
             // 
             // ConcertCollector
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Controls.Add(this.tabControl_MainWindow);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -234,6 +244,7 @@
         private System.Windows.Forms.Label label_EventManagement_Bands;
         private System.Windows.Forms.Button button_EventManagement_AddBand;
         private System.Windows.Forms.Button button_EventManagement_DeleteBand;
+        private System.Windows.Forms.Button button_EventManagement_Save;
     }
 }
 

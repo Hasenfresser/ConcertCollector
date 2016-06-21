@@ -8,10 +8,6 @@ namespace ConcertCollector.Layouts
         public AddBand()
         {
             InitializeComponent();
-
-            textBox_AddBand_Name.Text = "";
-            textBox_AddBand_NameExtra.Text = "";
-            textBox_AddBand_Info.Text = "";
         }
 
 
@@ -59,11 +55,7 @@ namespace ConcertCollector.Layouts
             ActualBand.NameExtra = textBox_AddBand_NameExtra.Text;
             ActualBand.Info = textBox_AddBand_Info.Text;
 
-            MessageBox.Show("Test 1", "Bla", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-            MessageBox.Show("Test 2", "Bla", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-            AddBand.ActiveForm.Hide();
+            ConcertCollector.ActualEvent.Bands.Add(ActualBand);
 
             this.Dispose();
             this.Close();
