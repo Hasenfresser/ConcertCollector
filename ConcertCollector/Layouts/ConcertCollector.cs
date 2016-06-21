@@ -5,9 +5,13 @@ namespace ConcertCollector
 {
     public partial class ConcertCollector : Form
     {
+        public static DataManagment.Event ActualEvent;
+
         public ConcertCollector()
         {
             InitializeComponent();
+
+            ActualEvent = new DataManagment.Event();
         }
 
         private void tabPage_EventManagement_Click(object sender, EventArgs e)
@@ -92,7 +96,15 @@ namespace ConcertCollector
 
         private void button_EventManagement_AddBand_Click(object sender, EventArgs e)
         {
+            var Window_AddBand = new Layouts.AddBand();
 
+            Window_AddBand.ShowDialog();
+
+        }
+
+        private void ConcertCollector_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

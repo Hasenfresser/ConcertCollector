@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Layouts\AddBand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layouts\AddBand.Designer.cs">
+      <DependentUpon>AddBand.cs</DependentUpon>
+    </Compile>
     <Compile Include="Layouts\ConcertCollector.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +61,9 @@
     <Compile Include="DataManagment\Data.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Layouts\AddBand.resx">
+      <DependentUpon>AddBand.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Layouts\ConcertCollector.resx">
       <DependentUpon>ConcertCollector.cs</DependentUpon>
     </EmbeddedResource>

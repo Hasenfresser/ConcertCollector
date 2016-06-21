@@ -31,6 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConcertCollector));
             this.tabControl_MainWindow = new System.Windows.Forms.TabControl();
             this.tabPage_EventManagement = new System.Windows.Forms.TabPage();
+            this.button_EventManagement_DeleteBand = new System.Windows.Forms.Button();
+            this.button_EventManagement_AddBand = new System.Windows.Forms.Button();
+            this.label_EventManagement_Bands = new System.Windows.Forms.Label();
+            this.listBox_EventManagement_Bands = new System.Windows.Forms.ListBox();
             this.textBox_EventManagement_Cost = new System.Windows.Forms.TextBox();
             this.label_EventManagement_Cost = new System.Windows.Forms.Label();
             this.label_EventManagement_Location = new System.Windows.Forms.Label();
@@ -45,10 +49,6 @@
             this.textBox_EventManagement_Name = new System.Windows.Forms.TextBox();
             this.tabPage_Search = new System.Windows.Forms.TabPage();
             this.tabPage_Statistics = new System.Windows.Forms.TabPage();
-            this.listBox_EventManagement_Bands = new System.Windows.Forms.ListBox();
-            this.label_EventManagement_Bands = new System.Windows.Forms.Label();
-            this.button_EventManagement_AddBand = new System.Windows.Forms.Button();
-            this.button_EventManagement_DeleteBand = new System.Windows.Forms.Button();
             this.tabControl_MainWindow.SuspendLayout();
             this.tabPage_EventManagement.SuspendLayout();
             this.SuspendLayout();
@@ -84,6 +84,32 @@
             this.tabPage_EventManagement.Name = "tabPage_EventManagement";
             this.tabPage_EventManagement.UseVisualStyleBackColor = true;
             this.tabPage_EventManagement.Click += new System.EventHandler(this.tabPage_EventManagement_Click);
+            // 
+            // button_EventManagement_DeleteBand
+            // 
+            resources.ApplyResources(this.button_EventManagement_DeleteBand, "button_EventManagement_DeleteBand");
+            this.button_EventManagement_DeleteBand.Name = "button_EventManagement_DeleteBand";
+            this.button_EventManagement_DeleteBand.UseVisualStyleBackColor = true;
+            // 
+            // button_EventManagement_AddBand
+            // 
+            resources.ApplyResources(this.button_EventManagement_AddBand, "button_EventManagement_AddBand");
+            this.button_EventManagement_AddBand.Name = "button_EventManagement_AddBand";
+            this.button_EventManagement_AddBand.UseVisualStyleBackColor = true;
+            this.button_EventManagement_AddBand.Click += new System.EventHandler(this.button_EventManagement_AddBand_Click);
+            // 
+            // label_EventManagement_Bands
+            // 
+            resources.ApplyResources(this.label_EventManagement_Bands, "label_EventManagement_Bands");
+            this.label_EventManagement_Bands.Name = "label_EventManagement_Bands";
+            this.label_EventManagement_Bands.Click += new System.EventHandler(this.label_EventManagement_Bands_Click);
+            // 
+            // listBox_EventManagement_Bands
+            // 
+            this.listBox_EventManagement_Bands.FormattingEnabled = true;
+            resources.ApplyResources(this.listBox_EventManagement_Bands, "listBox_EventManagement_Bands");
+            this.listBox_EventManagement_Bands.Name = "listBox_EventManagement_Bands";
+            this.listBox_EventManagement_Bands.SelectedIndexChanged += new System.EventHandler(this.listBox_EventManagement_Bands_SelectedIndexChanged);
             // 
             // textBox_EventManagement_Cost
             // 
@@ -170,32 +196,6 @@
             this.tabPage_Statistics.UseVisualStyleBackColor = true;
             this.tabPage_Statistics.Click += new System.EventHandler(this.tabPage_Statistics_Click);
             // 
-            // listBox_EventManagement_Bands
-            // 
-            this.listBox_EventManagement_Bands.FormattingEnabled = true;
-            resources.ApplyResources(this.listBox_EventManagement_Bands, "listBox_EventManagement_Bands");
-            this.listBox_EventManagement_Bands.Name = "listBox_EventManagement_Bands";
-            this.listBox_EventManagement_Bands.SelectedIndexChanged += new System.EventHandler(this.listBox_EventManagement_Bands_SelectedIndexChanged);
-            // 
-            // label_EventManagement_Bands
-            // 
-            resources.ApplyResources(this.label_EventManagement_Bands, "label_EventManagement_Bands");
-            this.label_EventManagement_Bands.Name = "label_EventManagement_Bands";
-            this.label_EventManagement_Bands.Click += new System.EventHandler(this.label_EventManagement_Bands_Click);
-            // 
-            // button_EventManagement_AddBand
-            // 
-            resources.ApplyResources(this.button_EventManagement_AddBand, "button_EventManagement_AddBand");
-            this.button_EventManagement_AddBand.Name = "button_EventManagement_AddBand";
-            this.button_EventManagement_AddBand.UseVisualStyleBackColor = true;
-            this.button_EventManagement_AddBand.Click += new System.EventHandler(this.button_EventManagement_AddBand_Click);
-            // 
-            // button_EventManagement_DeleteBand
-            // 
-            resources.ApplyResources(this.button_EventManagement_DeleteBand, "button_EventManagement_DeleteBand");
-            this.button_EventManagement_DeleteBand.Name = "button_EventManagement_DeleteBand";
-            this.button_EventManagement_DeleteBand.UseVisualStyleBackColor = true;
-            // 
             // ConcertCollector
             // 
             resources.ApplyResources(this, "$this");
@@ -204,6 +204,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "ConcertCollector";
+            this.Load += new System.EventHandler(this.ConcertCollector_Load);
             this.tabControl_MainWindow.ResumeLayout(false);
             this.tabPage_EventManagement.ResumeLayout(false);
             this.tabPage_EventManagement.PerformLayout();
