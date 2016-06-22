@@ -117,303 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;tabPage_EventManagement.Name" xml:space="preserve">
-    <value>tabPage_EventManagement</value>
-  </data>
-  <data name="&gt;&gt;tabPage_EventManagement.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage_EventManagement.Parent" xml:space="preserve">
-    <value>tabControl_MainWindow</value>
-  </data>
-  <data name="&gt;&gt;tabPage_EventManagement.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Search.Name" xml:space="preserve">
-    <value>tabPage_Search</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Search.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Search.Parent" xml:space="preserve">
-    <value>tabControl_MainWindow</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Search.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Statistics.Name" xml:space="preserve">
-    <value>tabPage_Statistics</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Statistics.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Statistics.Parent" xml:space="preserve">
-    <value>tabControl_MainWindow</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Statistics.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="tabControl_MainWindow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="tabControl_MainWindow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>380, 430</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tabControl_MainWindow.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabControl_MainWindow.Name" xml:space="preserve">
-    <value>tabControl_MainWindow</value>
-  </data>
-  <data name="&gt;&gt;tabControl_MainWindow.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControl_MainWindow.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tabControl_MainWindow.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;button_EventManagement_Save.Name" xml:space="preserve">
-    <value>button_EventManagement_Save</value>
-  </data>
-  <data name="&gt;&gt;button_EventManagement_Save.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_EventManagement_Save.Parent" xml:space="preserve">
-    <value>tabPage_EventManagement</value>
-  </data>
-  <data name="&gt;&gt;button_EventManagement_Save.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;button_EventManagement_DeleteBand.Name" xml:space="preserve">
-    <value>button_EventManagement_DeleteBand</value>
-  </data>
-  <data name="&gt;&gt;button_EventManagement_DeleteBand.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_EventManagement_DeleteBand.Parent" xml:space="preserve">
-    <value>tabPage_EventManagement</value>
-  </data>
-  <data name="&gt;&gt;button_EventManagement_DeleteBand.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;button_EventManagement_AddBand.Name" xml:space="preserve">
-    <value>button_EventManagement_AddBand</value>
-  </data>
-  <data name="&gt;&gt;button_EventManagement_AddBand.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_EventManagement_AddBand.Parent" xml:space="preserve">
-    <value>tabPage_EventManagement</value>
-  </data>
-  <data name="&gt;&gt;button_EventManagement_AddBand.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_Bands.Name" xml:space="preserve">
-    <value>label_EventManagement_Bands</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_Bands.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_Bands.Parent" xml:space="preserve">
-    <value>tabPage_EventManagement</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_Bands.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;listBox_EventManagement_Bands.Name" xml:space="preserve">
-    <value>listBox_EventManagement_Bands</value>
-  </data>
-  <data name="&gt;&gt;listBox_EventManagement_Bands.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listBox_EventManagement_Bands.Parent" xml:space="preserve">
-    <value>tabPage_EventManagement</value>
-  </data>
-  <data name="&gt;&gt;listBox_EventManagement_Bands.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;textBox_EventManagement_Cost.Name" xml:space="preserve">
-    <value>textBox_EventManagement_Cost</value>
-  </data>
-  <data name="&gt;&gt;textBox_EventManagement_Cost.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_EventManagement_Cost.Parent" xml:space="preserve">
-    <value>tabPage_EventManagement</value>
-  </data>
-  <data name="&gt;&gt;textBox_EventManagement_Cost.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_Cost.Name" xml:space="preserve">
-    <value>label_EventManagement_Cost</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_Cost.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_Cost.Parent" xml:space="preserve">
-    <value>tabPage_EventManagement</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_Cost.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_Location.Name" xml:space="preserve">
-    <value>label_EventManagement_Location</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_Location.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_Location.Parent" xml:space="preserve">
-    <value>tabPage_EventManagement</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_Location.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;textBox_EventManagement_Location.Name" xml:space="preserve">
-    <value>textBox_EventManagement_Location</value>
-  </data>
-  <data name="&gt;&gt;textBox_EventManagement_Location.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_EventManagement_Location.Parent" xml:space="preserve">
-    <value>tabPage_EventManagement</value>
-  </data>
-  <data name="&gt;&gt;textBox_EventManagement_Location.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_DateTo.Name" xml:space="preserve">
-    <value>label_EventManagement_DateTo</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_DateTo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_DateTo.Parent" xml:space="preserve">
-    <value>tabPage_EventManagement</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_DateTo.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_DateFrom.Name" xml:space="preserve">
-    <value>label_EventManagement_DateFrom</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_DateFrom.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_DateFrom.Parent" xml:space="preserve">
-    <value>tabPage_EventManagement</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_DateFrom.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_NameExtra.Name" xml:space="preserve">
-    <value>label_EventManagement_NameExtra</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_NameExtra.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_NameExtra.Parent" xml:space="preserve">
-    <value>tabPage_EventManagement</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_NameExtra.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_Name.Name" xml:space="preserve">
-    <value>label_EventManagement_Name</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_Name.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_Name.Parent" xml:space="preserve">
-    <value>tabPage_EventManagement</value>
-  </data>
-  <data name="&gt;&gt;label_EventManagement_Name.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker_EventManagement_To.Name" xml:space="preserve">
-    <value>dateTimePicker_EventManagement_To</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker_EventManagement_To.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker_EventManagement_To.Parent" xml:space="preserve">
-    <value>tabPage_EventManagement</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker_EventManagement_To.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker_EventManagement_From.Name" xml:space="preserve">
-    <value>dateTimePicker_EventManagement_From</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker_EventManagement_From.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker_EventManagement_From.Parent" xml:space="preserve">
-    <value>tabPage_EventManagement</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker_EventManagement_From.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;textBox_EventManagement_NameExtra.Name" xml:space="preserve">
-    <value>textBox_EventManagement_NameExtra</value>
-  </data>
-  <data name="&gt;&gt;textBox_EventManagement_NameExtra.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_EventManagement_NameExtra.Parent" xml:space="preserve">
-    <value>tabPage_EventManagement</value>
-  </data>
-  <data name="&gt;&gt;textBox_EventManagement_NameExtra.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;textBox_EventManagement_Name.Name" xml:space="preserve">
-    <value>textBox_EventManagement_Name</value>
-  </data>
-  <data name="&gt;&gt;textBox_EventManagement_Name.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_EventManagement_Name.Parent" xml:space="preserve">
-    <value>tabPage_EventManagement</value>
-  </data>
-  <data name="&gt;&gt;textBox_EventManagement_Name.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="tabPage_EventManagement.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tabPage_EventManagement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage_EventManagement.Size" type="System.Drawing.Size, System.Drawing">
-    <value>372, 404</value>
-  </data>
-  <data name="tabPage_EventManagement.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabPage_EventManagement.Text" xml:space="preserve">
-    <value>Event-Management</value>
-  </data>
-  <data name="&gt;&gt;tabPage_EventManagement.Name" xml:space="preserve">
-    <value>tabPage_EventManagement</value>
-  </data>
-  <data name="&gt;&gt;tabPage_EventManagement.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage_EventManagement.Parent" xml:space="preserve">
-    <value>tabControl_MainWindow</value>
-  </data>
-  <data name="&gt;&gt;tabPage_EventManagement.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="button_EventManagement_Save.Location" type="System.Drawing.Point, System.Drawing">
     <value>121, 374</value>
   </data>
   <data name="button_EventManagement_Save.Size" type="System.Drawing.Size, System.Drawing">
     <value>242, 23</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button_EventManagement_Save.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
@@ -556,13 +267,13 @@
     <value>6, 145</value>
   </data>
   <data name="label_EventManagement_Cost.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 13</value>
+    <value>48, 13</value>
   </data>
   <data name="label_EventManagement_Cost.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
   <data name="label_EventManagement_Cost.Text" xml:space="preserve">
-    <value>Preis:</value>
+    <value>Preis (€):</value>
   </data>
   <data name="&gt;&gt;label_EventManagement_Cost.Name" xml:space="preserve">
     <value>label_EventManagement_Cost</value>
@@ -816,6 +527,34 @@
   <data name="&gt;&gt;textBox_EventManagement_Name.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
+  <data name="tabPage_EventManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabPage_EventManagement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage_EventManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>372, 404</value>
+  </data>
+  <data name="tabPage_EventManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage_EventManagement.Text" xml:space="preserve">
+    <value>Event-Management</value>
+  </data>
+  <data name="&gt;&gt;tabPage_EventManagement.Name" xml:space="preserve">
+    <value>tabPage_EventManagement</value>
+  </data>
+  <data name="&gt;&gt;tabPage_EventManagement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_EventManagement.Parent" xml:space="preserve">
+    <value>tabControl_MainWindow</value>
+  </data>
+  <data name="&gt;&gt;tabPage_EventManagement.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="tabPage_Search.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
@@ -866,6 +605,27 @@
   </data>
   <data name="&gt;&gt;tabPage_Statistics.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="tabControl_MainWindow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="tabControl_MainWindow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>380, 430</value>
+  </data>
+  <data name="tabControl_MainWindow.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabControl_MainWindow.Name" xml:space="preserve">
+    <value>tabControl_MainWindow</value>
+  </data>
+  <data name="&gt;&gt;tabControl_MainWindow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl_MainWindow.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl_MainWindow.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

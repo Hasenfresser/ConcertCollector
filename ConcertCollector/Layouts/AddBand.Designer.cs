@@ -90,7 +90,6 @@
             this.textBox_AddBand_Info.Name = "textBox_AddBand_Info";
             this.textBox_AddBand_Info.Size = new System.Drawing.Size(184, 61);
             this.textBox_AddBand_Info.TabIndex = 5;
-            this.textBox_AddBand_Info.Text = "\r\n";
             this.textBox_AddBand_Info.TextChanged += new System.EventHandler(this.textBox_AddBand_Info_TextChanged);
             // 
             // button_AddBand_Add

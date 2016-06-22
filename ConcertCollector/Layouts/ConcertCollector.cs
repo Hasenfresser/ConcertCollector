@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Globalization;
+using System.Web.Script.Serialization;
 using System.Windows.Forms;
 
 namespace ConcertCollector
@@ -7,17 +7,18 @@ namespace ConcertCollector
     public partial class ConcertCollector : Form
     {
         public static DataManagment.Data ActualData;
-        public static DataManagment.Event ActualEvent;
 
         DateTime DateFrom = new DateTime();
         DateTime DateTo = new DateTime();
+
+        bool Error;
 
         public ConcertCollector()
         {
             InitializeComponent();
 
-            ActualEvent = new DataManagment.Event();
             ActualData = new DataManagment.Data();
+            ActualData.Events.Add(new DataManagment.Event());
 
             DateFrom = DateTime.ParseExact(dateTimePicker_EventManagement_From.Value.ToString("dd.MM.yyyy"), "dd.MM.yyyy", System.Globalization.CultureInfo.InvariantCulture);
             DateTo = DateTime.ParseExact(dateTimePicker_EventManagement_To.Value.ToString("dd.MM.yyyy"), "dd.MM.yyyy", System.Globalization.CultureInfo.InvariantCulture);
@@ -117,11 +118,12 @@ namespace ConcertCollector
 
             listBox_EventManagement_Bands.Items.Clear();
 
-            for (int Counter = 0; Counter < ActualEvent.Bands.Count; ++Counter)
-                if (ActualEvent.Bands[Counter].NameExtra != "")
-                    listBox_EventManagement_Bands.Items.Add(ActualEvent.Bands[Counter].Name + " (" + ActualEvent.Bands[Counter].NameExtra + ')');
+            for (int Counter = 0; Counter < ActualData.Events[ActualData.Events.Count - 1].Bands.Count; ++Counter)
+                if (ActualData.Events[ActualData.Events.Count - 1].Bands[Counter].NameExtra != "")
+                    listBox_EventManagement_Bands.Items.Add(ActualData.Events[ActualData.Events.Count - 1].Bands[Counter].Name + 
+                        " (" + ActualData.Events[ActualData.Events.Count - 1].Bands[Counter].NameExtra + ')');
                 else
-                    listBox_EventManagement_Bands.Items.Add(ActualEvent.Bands[Counter].Name);
+                    listBox_EventManagement_Bands.Items.Add(ActualData.Events[ActualData.Events.Count - 1].Bands[Counter].Name);
 
 
         }
@@ -133,20 +135,51 @@ namespace ConcertCollector
 
         private void button_EventManagement_Save_Click(object sender, EventArgs e)
         {
-            ActualEvent.Name = textBox_EventManagement_Name.Text;
-            ActualEvent.NameExtra = textBox_EventManagement_NameExtra.Text;
-            ActualEvent.DateFrom = DateTime.ParseExact(dateTimePicker_EventManagement_From.Value.ToString("dd.MM.yyyy"), "dd.MM.yyyy", System.Globalization.CultureInfo.InvariantCulture);
-            ActualEvent.DateTo = DateTime.ParseExact(dateTimePicker_EventManagement_To.Value.ToString("dd.MM.yyyy"), "dd.MM.yyyy", System.Globalization.CultureInfo.InvariantCulture);
-            ActualEvent.Location = textBox_EventManagement_Location.Text;
+            Error = false;
 
+            ActualData.Events[ActualData.Events.Count - 1].Name = textBox_EventManagement_Name.Text.Trim();
+            ActualData.Events[ActualData.Events.Count - 1].Location = textBox_EventManagement_Location.Text.Trim();
+
+            if (ActualData.Events[ActualData.Events.Count - 1].Name == "" ||
+                ActualData.Events[ActualData.Events.Count - 1].Location == "" ||
+                ActualData.Events[ActualData.Events.Count - 1].Bands.Count < 1)
+                Error = true;            
+
+            ActualData.Events[ActualData.Events.Count - 1].NameExtra = textBox_EventManagement_NameExtra.Text.Trim();
+            ActualData.Events[ActualData.Events.Count - 1].DateFrom = DateTime.ParseExact(dateTimePicker_EventManagement_From.Value.ToString("dd.MM.yyyy"), "dd.MM.yyyy", System.Globalization.CultureInfo.InvariantCulture);
+            ActualData.Events[ActualData.Events.Count - 1].DateTo = DateTime.ParseExact(dateTimePicker_EventManagement_To.Value.ToString("dd.MM.yyyy"), "dd.MM.yyyy", System.Globalization.CultureInfo.InvariantCulture);
+            
             float Result = new float();
 
-            if(float.TryParse(textBox_EventManagement_Cost.Text, out Result))
-                ActualEvent.Cost = Result;
+            if (float.TryParse(textBox_EventManagement_Cost.Text, out Result))
+                ActualData.Events[ActualData.Events.Count - 1].Cost = Result;
             else
-                ActualEvent.Cost = 0;
-            
-            ActualEvent.Bands.Add(new DataManagment.Band());
+                ActualData.Events[ActualData.Events.Count - 1].Cost = 0;
+
+            if (!Error)
+            {
+                ActualData.Events[ActualData.Events.Count - 1].ID = ActualData.Events.Count - 1;                
+
+                String JsonString = new JavaScriptSerializer().Serialize(ActualData);
+
+                System.IO.StreamWriter DataFile = new System.IO.StreamWriter("Data.ror");
+                DataFile.WriteLine(JsonString);
+
+                DataFile.Close();
+
+                ActualData.Events.Add(new DataManagment.Event());
+
+                textBox_EventManagement_Name.Text = "";
+                textBox_EventManagement_NameExtra.Text = "";
+                textBox_EventManagement_Location.Text = "";
+                textBox_EventManagement_Cost.Text = "";
+
+                listBox_EventManagement_Bands.Items.Clear();
+            }
+            else
+            {
+                MessageBox.Show("\"Name\", \"Ort\" und \"Bands\" darf nicht leer sein.", "Eingabefehler", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }          
         }
     }
 }
