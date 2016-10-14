@@ -45,7 +45,6 @@
             this.label_AddBand_Name.Size = new System.Drawing.Size(38, 13);
             this.label_AddBand_Name.TabIndex = 0;
             this.label_AddBand_Name.Text = "Name:";
-            this.label_AddBand_Name.Click += new System.EventHandler(this.label_AddBand_Name_Click);
             // 
             // label_AddBand_Info
             // 
@@ -55,7 +54,6 @@
             this.label_AddBand_Info.Size = new System.Drawing.Size(74, 13);
             this.label_AddBand_Info.TabIndex = 1;
             this.label_AddBand_Info.Text = "Informationen:";
-            this.label_AddBand_Info.Click += new System.EventHandler(this.label_AddBand_Info_Click);
             // 
             // label_AddBand_NameExtra
             // 
@@ -65,7 +63,6 @@
             this.label_AddBand_NameExtra.Size = new System.Drawing.Size(79, 13);
             this.label_AddBand_NameExtra.TabIndex = 2;
             this.label_AddBand_NameExtra.Text = "Name (Zusatz):";
-            this.label_AddBand_NameExtra.Click += new System.EventHandler(this.label_AddBand_NameExtra_Click);
             // 
             // textBox_AddBand_Name
             // 
@@ -73,7 +70,6 @@
             this.textBox_AddBand_Name.Name = "textBox_AddBand_Name";
             this.textBox_AddBand_Name.Size = new System.Drawing.Size(184, 20);
             this.textBox_AddBand_Name.TabIndex = 3;
-            this.textBox_AddBand_Name.TextChanged += new System.EventHandler(this.textBox_AddBand_Name_TextChanged);
             // 
             // textBox_AddBand_NameExtra
             // 
@@ -81,7 +77,6 @@
             this.textBox_AddBand_NameExtra.Name = "textBox_AddBand_NameExtra";
             this.textBox_AddBand_NameExtra.Size = new System.Drawing.Size(184, 20);
             this.textBox_AddBand_NameExtra.TabIndex = 4;
-            this.textBox_AddBand_NameExtra.TextChanged += new System.EventHandler(this.textBox_AddBand_NameExtra_TextChanged);
             // 
             // textBox_AddBand_Info
             // 
@@ -90,7 +85,6 @@
             this.textBox_AddBand_Info.Name = "textBox_AddBand_Info";
             this.textBox_AddBand_Info.Size = new System.Drawing.Size(184, 61);
             this.textBox_AddBand_Info.TabIndex = 5;
-            this.textBox_AddBand_Info.TextChanged += new System.EventHandler(this.textBox_AddBand_Info_TextChanged);
             // 
             // button_AddBand_Add
             // 
@@ -106,6 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(285, 140);
             this.Controls.Add(this.button_AddBand_Add);
             this.Controls.Add(this.textBox_AddBand_Info);

@@ -12,39 +12,7 @@ namespace ConcertCollector.Layouts
             InitializeComponent();
         }
 
-
-
-        private void label_AddBand_Name_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox_AddBand_Info_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox_AddBand_NameExtra_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox_AddBand_Name_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void AddBand_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label_AddBand_Info_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label_AddBand_NameExtra_Click(object sender, EventArgs e)
         {
 
         }
